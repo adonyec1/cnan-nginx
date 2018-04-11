@@ -23,7 +23,7 @@ define nginx::vhost(
   file { "$vhost_docroot": 
     ensure => directory,
     owner  => $owner,
+    mode    => 0755,
     group  => $group,
-    mode   => '0775',
   }
 }
